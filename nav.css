@@ -38,13 +38,28 @@
   padding: 1em 3em;
   border-radius: 2em;
   align-items: center;
-
 }
 
 .links a{
   text-decoration: none;
   font-family: Poppins;
   color: rgb(132, 96, 45) ;
+  position: relative;
+}
+
+.links a::after{
+  content: "";
+  position: absolute;
+  background-color: #5B3B1C;
+  width: 0;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width .3s;
+}
+
+.links a:hover::after{ 
+  width: 100%;
 }
 
 .dish-icon{

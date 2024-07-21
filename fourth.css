@@ -7,8 +7,6 @@
     padding-bottom: 4em;
 }
 
-
-
 .service-sub{
     font-family: Poppins;
     color: #CBA07B;
@@ -28,7 +26,7 @@
     justify-content: center;
     align-items: center;
     gap: 8em;
-    max-width: 80em;  
+    max-width: 70em;  
     font-family: Poppins;
     color: #CBA07B;
 }
@@ -37,9 +35,55 @@
     color: #5B3B1C;
 }
 
-
 .service-box{
     display: flex;
     width: 12em;
     flex-direction: column;
+    justify-content: center;
+}
+
+@media (width < 1024px) {
+    .service-box{
+        width: 9em;
+        font-size: 1em;
+    }
+
+    .service-title{
+        font-size: 2em;
+    }
+
+    .service-sub{
+        font-size: 1em;
+    }
+
+    .parag{
+        font-size: 15px;
+    }
+    .services-card{
+        gap: 5em;
+    }
+}
+
+@media (width < 599px) {
+    .service-box{
+        width: 9em;
+        font-size: .5em;
+    }
+
+    .service-title{
+        font-size: 1em;
+    }
+
+    .service-sub{
+        font-size: .5em;
+    }
+
+    .parag{
+        font-size: 9px;
+    }
+
+    .services-card{
+        margin-top: 1em;
+    }
+    
 }

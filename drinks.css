@@ -17,11 +17,11 @@
 
 .classicMilktea-container{
     display: flex;
-    gap: 3em;
+    gap: 2em;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    max-width: 160em;
+    max-width: 100em;
 }
 
 
@@ -34,24 +34,34 @@
     flex-direction: column;
     gap: 1em;
     background-color: #D6C1AB;
-    width: 20em;  
+    width: 15em;  
     border-radius: 1em;
     padding-bottom: 1em;
+    transition: box-shadow .3s, background-color .3s;
+}
+
+.classicMilktea-card:hover{
+    box-shadow: 0 0 10px rgba(61, 30, 1, 0.5);
+    background-color: #F8F7F4;
 }
 .milktea-image{
-    width: 20em;
+    width: 15em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
 }
 
 .milktea-image img{
-    width: 100%;
-    
+    width: 70%;
 }
 
 .classicMilktea-info{
+    padding: 2px;
     align-items: center;
     display: flex;
-    gap: 4em;
+    gap: 3em;
     color: #5B3B1C;
+    justify-content: space-around;
 }
 
 .classicMilktea-price{
@@ -59,5 +69,66 @@
 }
 
 .classicMilktea-add-btn {
-    font-size: 3em;
+    font-size: 2em;
+}
+
+@media (width < 1024px) {
+    .classicMilktea-card{
+        margin-top: 1em;
+        gap: 1em;
+        width: 10em;  
+    }
+
+    .classicMilktea-container {
+        gap: 1em;
+    }
+
+    .classicMilktea-info{
+        padding: 2px;
+        font-size: 10px;
+        gap: 2em;
+    }
+
+    .milktea-image{
+        width: 10em;
+    }
+
+    .drinks{
+        padding-bottom: 1;
+    }
+
+    .drinks h1{
+        font-size: 2em;
+    }
+
+}
+
+@media (width < 599px) {
+    .classicMilktea-card{
+        margin-top: .5em;
+        gap: .5em;
+        width: 8em;  
+    }
+
+    .classicMilktea-container{
+        gap: 1em;
+    }
+
+    .classicMilktea-info{
+        padding: 2px;
+        font-size: 7px;
+        gap: 1.4em;
+    }
+
+    .milktea-image{
+        width: 6em;
+    }
+
+    .drinks{
+        padding-bottom: .5em;
+    }
+
+    .drinks h1{
+        font-size: 1em;
+    }
 }

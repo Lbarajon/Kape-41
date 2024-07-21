@@ -11,7 +11,7 @@ footer{
    max-width: 1140px;
    margin: 0 auto;
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    align-items: center;
    flex-direction: column;
   }
@@ -20,14 +20,18 @@ footer{
    display: flex;
    justify-content: space-between;
    align-items: center;
-  }
+   width: 100%;
+  }  
   
   .col{
    min-width: 250px;
    color:rgb(255, 255, 255);
    font-family: poppins;
    padding:0 2rem;
+   flex-direction: column;
+   display: flex;
   }
+
   .col .logo{
    width: 100px;
    margin-bottom:25px;
@@ -54,8 +58,6 @@ footer{
   .col h3:hover::after{
    width:50px
   }
-
-
 
   .col .social a i{
    color:rgb(237, 199, 157);
@@ -97,7 +99,7 @@ footer{
   }
   .col .contact-details{
    display: inline-flex;
-   justify-content: space-between;
+   justify-content: flex-start;
   }
   .col .contact-details i{
    margin-right:15px;
@@ -107,7 +109,8 @@ footer{
    display: flex;
    justify-content: center;
    align-items: center;
-   padding:2rem 0;
+   padding:2 em 0;
+   margin-left: 2em;
   }
   .row .form input{
    background-color: rgb(255, 255, 255);
@@ -118,6 +121,7 @@ footer{
    border-top-right-radius: 0;
    border-bottom-right-radius: 0;
    font-family: Poppins;
+   
   }
   .form button{
    padding:14px 20px;
@@ -128,15 +132,10 @@ footer{
    background-color: rgb(155, 99, 62);
   }
   
-  @media (max-width: 768px) {
+  @media (width < 1024px) {
     .footer {
-        background-color: #6f4e37;
-        color: white;
         padding: 10px 0;
         position: fixed;
-        bottom: 0;
-        width: 100%;
-        text-align: center;
       }
 
       .row{
@@ -161,4 +160,26 @@ footer{
       .form-box .form-content{
         padding: 30px 20px;
       }
+
+      .contact-details{
+        font-size: 15px;
+      }
+
+      .col p{
+        font-size: 15px;
+      }
   }  
+
+  @media (width < 599px ){
+    .contact-details{
+      font-size: 10px;
+    }
+
+    .col p{
+      font-size: 10px;
+    }
+
+    .col .logo{
+      width: 15%;
+    }
+  }

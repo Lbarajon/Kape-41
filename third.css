@@ -14,8 +14,6 @@
     text-shadow: 2px 2px 10px rgba(132, 96, 45, .5);   
 }
 
-
-
 .label {
     color: #CBA07B;
 }
@@ -31,7 +29,8 @@
     
  .con-image{
     width: 30em;
- }   
+ }  
+  
 .box {
     border-radius: 1em;
     width: 20em;
@@ -74,9 +73,86 @@
   text-decoration: none;
   font-family: Poppins;
   color: #5B3B1C;
+  font-weight: bold;
+}
+
+.btn:hover {
+    color: white;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    background-color: #5B3B1C;
 }
 
 .box img {
   width: 50%;
   height: auto;
+}
+
+@media (width < 1024px) {
+    .box {
+        border-radius: 1em;
+        width: 15em;
+        height: 15em;
+    }
+
+    .box img {
+        width: 40%;
+        height: auto;
+    }
+
+    .label {
+        font-size: 2em;
+    }
+
+    .menu{
+        font-size: 2.5em;
+    }
+
+    .btn {
+        padding: 1em;
+        font-size: 15px;
+    }
+
+    .hovereffect {  
+        width: 15em;
+        height: 15em;
+    }
+}
+
+@media (width < 599px) {
+    .fullmenu{
+        padding-bottom: 1.5em;
+    }
+    .box {
+        border-radius: .5em;
+        width: 9em;
+        height: 9em;
+    }
+
+    .box img {
+        width:35%;
+        height: auto;
+    }
+
+    .label {
+        font-size: 1em;
+    }
+
+    .menu{
+        font-size: 1em;
+    }
+
+    .container {
+        margin-top: 1em;
+    }
+
+    .btn {
+        padding: .8em;
+        font-size: 8px;
+        font-weight: 5px;
+    }
+
+    .hovereffect {  
+        width: 9.5em;
+        height: 9.5em;
+    }
 }

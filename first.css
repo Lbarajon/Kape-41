@@ -36,12 +36,22 @@
 
 .button a{  
     background-color: #5B2B1C;
+    box-shadow: 0 0 15px rgba(132, 96, 45, .5);
     border-radius: 109em;
     text-decoration: none;
     font-family: Poppins;
     padding: 15px 40px;
     color: white;
     text-decoration: none;
+    transition: box-shadow .3s;
+    font-weight: bold;
+}
+
+
+.button a:hover{
+    background-color: #CBA07B;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
+    color: #5B2B1C;
 }
 
 .carousel{
@@ -79,7 +89,7 @@
 /*Cellphone*/
 @media (width < 599px) {
     .cafe-tag{
-        width: 10em;
+        width: 8em;
     }
 
     .tagline h1{
