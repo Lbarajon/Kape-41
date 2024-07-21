@@ -1,0 +1,102 @@
+.first-layer{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #CBA07B;
+    background-position: center;
+    padding: 4em 0em;
+}
+
+.tagline{
+    font-family: Poppins;
+    color: white;
+    margin-left: 5em;
+    display: flex;
+    text-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+.tagline h1{
+    font-size: 5em;
+    line-height: 1em;
+    max-width: 10em;
+}
+
+.tagline p{
+    font-size: 2em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.cafe-tag{
+    width: 35em;
+}
+
+.button a{  
+    background-color: #5B2B1C;
+    border-radius: 109em;
+    text-decoration: none;
+    font-family: Poppins;
+    padding: 15px 40px;
+    color: white;
+    text-decoration: none;
+}
+
+.carousel{
+    height: 100em;
+    background-color: #b4b4b4;
+    z-index: 9999;
+}
+
+/*Tablet*/
+@media (width < 1024px) {
+    .cafe-tag{
+        width: 25em;
+    }
+
+    .tagline h1{
+        font-size: 3em;
+        line-height: 1em;
+        max-width: 10em;
+    }
+
+    .tagline p{
+        font-size: 1em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .button a{  
+        font-size: .6em;
+        padding: 15px 30px;
+    }
+
+   
+}
+
+/*Cellphone*/
+@media (width < 599px) {
+    .cafe-tag{
+        width: 10em;
+    }
+
+    .tagline h1{
+        font-size: 2em;
+        line-height: 1.1em;
+        max-width: 10em;
+    }
+
+    .tagline p{
+        font-size: .5em;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+
+    .button a{  
+        font-size: .47em;
+        padding: 5px 14px;
+    }
+    }
+   

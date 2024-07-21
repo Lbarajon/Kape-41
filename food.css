@@ -1,0 +1,60 @@
+/*.food{
+    padding-top: 4em;
+    
+    font-family: Poppins;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-bottom: 4em;
+    background-color: #D6C1AB;
+}
+
+.dish-icon{
+    width: 4em;
+}
+
+.dish-icon:hover{
+    background-color:#5B3B1C;
+}
+
+.food h1{
+    color: #5B3B1C;
+}
+
+.quesadilla-container{
+    display: flex;
+    align-items: center;
+    gap: 4em;
+}
+
+.food-container{
+    min-width: 5em;
+    max-width: 60em;
+    gap: 5em;
+    margin-top: 1em;
+    padding: 1em 2em;
+    border-radius: 1em;
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+    font-size: 1.5em;
+}
+
+.food-container h4{
+    color: #5B3B1C;
+
+}
+
+.food-image{
+    width: 10em;
+}
+
+hr{
+    border: 1px solid #5B3B1C ;
+}
+
+.name-food{
+    text-align: start;
+}
+    */
